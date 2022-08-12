@@ -1530,5 +1530,6 @@ y_pred_sar.head()
 Explained Variance - increased to 85.9%
 Mean Absolute Error - decreased to 7.5%
 ```
-6. The SARIMA model fits much more closely to reality as opposed to the ARIMA model. Because we have seasonal data ARIMA model will not yield favorable results.
-7. ![png](output_29_1.png)
+6. The SARIMA model fits much more closely to reality as opposed to the ARIMA model. Because we have seasonal data ARIMA model will not yield favorable results. ![png](output_39_0.png)
+7. These graphs plot the correlation between the occupancy and that same measure X periods before (ACF is the single lag value, PACF is the moving average). From the ACF graph, we can see the pattern of the movement through the day. Each day has 48 periods for each half hour from (12:00am - 12:00pm). The ACF peaks at 48, signifying that the period repeats daily. We can see another peak at 96. We can see from the PACF that the each time is positively correlated with the previous half hour. We can see that the pattern restarts negatively at the 49th period, which is one entire day later.
+![png](output_29_1.png)
