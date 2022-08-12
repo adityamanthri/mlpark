@@ -1,3 +1,18 @@
+# Predicting Parking Occupancy Rates in Naperville, IL
+
+An obvious question for an individual driver may be: when and where will parking be available?
+
+In order to predict an answer to this question, we will make a predictive model using Time Series analysis.
+
+Specifically, we will try two models:
++ ARIMA (Autoregressive integrated moving average)
++ SARIMA (Seasonal ARIMA).
+
+The dataset includes parking area occupancy and capacity for various locations in Naperville, IL.
+
+Each observation includes a date and time, ranging from Jan 1, 2010 through 2021 and for all times.  The measurements were taken every half hour, but not at exactly 0:00 and 0:30 times.
+
+
 ```python
 import pandas as pd
 pd.set_option('display.max_columns', 500)
