@@ -1529,4 +1529,6 @@ y_pred_sar.head()
 ```
 Explained Variance - increased to 85.9%
 Mean Absolute Error - decreased to 7.5%
-```python
+```
+6. The SARIMA model fits much more closely to reality as opposed to the ARIMA model. Because we have seasonal data ARIMA model will not yield favorable results.
+7. ![png](output_29_1.png)
